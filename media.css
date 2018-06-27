@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+     #navbar {
+          overflow: visible;
+     }
+     .menu {
+          position: absolute;
+          width: 100%;
+          height: 260px;
+          right: 0;
+          top: 50px;
+          background: #000;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-right: 0;
+          overflow: hidden;
+          max-height: 0;
+     }
+     .menu li a {
+          display: block;
+          color: #fff;
+          padding-left: 30px;
+     }
+     .btn {
+          display: block;
+          cursor: pointer;
+     }
+     .show {
+          max-height: 1000px;
+     }
+}
+
+@media screen and (max-width: 1400px) {
+     .about-text {
+          width: 80%;
+     }
+     form {
+          width: 80%;
+          justify-content: center;
+     }
+     #name,
+     #email,
+     #subject,
+     #message {
+          width: 80%;
+     }
+     footer {
+     height: 100%;
+     padding: 0 20%;
+}

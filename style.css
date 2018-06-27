@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Raleway:300,400,500,700,900');
+
+/*  font-family: 'Raleway', sans-serif;
+font-family: 'Nunito Sans', sans-serif;  */
+
+body {
+     font-family: 'Nunito Sans', sans-serif;
+     color: #333333;
+}
+
+p {
+     line-height: 1.7;
+}
+
+#navbar {
+     /*  position: fixed;
+z-index: 10;*/
+     height: 80px;
+     overflow: hidden;
+     top: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+     margin: auto;
+}
+
+.logo {
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: #000000;
+     height: 30px;
+     line-height: 30px;
+}
+
+.menu {
+     display: flex;
+     margin-right: 50px;
+}
+
+ul {
+     list-style: none;
+     padding: 0;
+}
+
+.menu li a {
+     text-decoration: none;
+     color: #333;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-left: 20px;
+}
+
+.menu a:hover {
+     color: #ccc;
+}
+
+header {
+     width: 100%;
+     height: 900px;
+     background: #fff;
+     box-shadow: 0 16px 40px #ededed;
+}
+
+.btn span {
+     display: block;
+     width: 25px;
+     height: 2px;
+     background: #333;
+     margin: 6px;
+}
+
+.btn {
+     display: none;
+     position: absolute;
+     right: 20px;
+}
+
+.menu {
+     list-style: none;
+}
+
+.menu a {
+     font-family: 'Raleway', sans-serif;
+     font-size: 0.75rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #333333;
+}
+
+
+/****   header  -  intro   ****/
+
+.intro {
+     text-align: center;
+     margin-top: 200px;
+}
+
+.intro h1 {
+     color: #000;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 900;
+     font-size: 4rem;
+}
+
+.intro span {
+     color: #ea0026;
+}
+
+.intro h4 {
+     color: #000;
+     font-size: 2rem;
+     font-weight: 300;
+}
+
+
+/*******  about  *****/
+
+#about {
+     padding: 70px 0;
+     /*height: 700px;*/
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.img-gimli img {
+     max-width: 450px;
+     margin: 30px;
+}
+
+
+/*******  about - text  *****/
+
+.about-text {
+     width: 50%;
+}
+
+.hello,
+.about-text h1 {
+     font-family: 'Raleway', sans-serif;
+}
+
+.about-text h1 {
+     color: #333333;
+     font-size: 2.6rem;
+     line-height: 1.3;
+}
+
+.hello {
+     color: #ea0026;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font-size: .85rem;
+     font-weight: 500;
+}
+
+
+/***** what-i-do  -cards *****/
+
+#what-i-do {
+     background: #f7f7f7;
+}
+
+.container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 70px 0;
+}
+
+.col {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 350px;
+     height: 400px;
+     background: #fff;
+     border-radius: 20px;
+     margin: 20px;
+}
+
+.fas {
+     color: #ea0026;
+     font-size: 2.8rem;
+     padding-bottom: 15px;
+}
+
+.col h3 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 400;
+     font-size: 1.8rem;
+     padding-top: 20px;
+     margin: 0;
+}
+
+.col p {
+     padding: 0 40px;
+     text-align: center;
+}
+
+
+/******list-of-work****/
+
+.list-of-work {
+     padding: 70px 0;
+     text-align: center;
+}
+
+.list-of-work h2 {
+     font-family: 'Raleway', sans-serif;
+     font-size: 2.5rem;
+     font-weight: 600;
+}
+
+.list-of-work ul {
+     margin: 0;
+     display: flex;
+     justify-content: center;
+}
+
+.list-of-work a {
+     padding-right: 15px;
+     color: #938D8D;
+     text-decoration: none;
+     font-size: 0.8rem;
+     text-transform: uppercase;
+     font-weight: 300;
+}
+
+.list-of-work a:hover {
+     color: #000000;
+     font-weight: 400;
+}
+
+
+/***** all-gallery ***/
+
+.gallery {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 1100px;
+     margin: auto;
+}
+
+.gallery-item {
+     cursor: pointer;
+     flex: 1 0 400px;
+     overflow: hidden;
+     position: relative;
+}
+
+.gallery-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+
+/*******hover gall***/
+
+.descr {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, .8);
+     color: white;
+     text-align: center;
+     padding-top: 35%;
+     text-transform: uppercase;
+     opacity: 0;
+     transition: all 0.5s;
+}
+
+.descr span {
+     padding: 15px;
+     letter-spacing: 2px;
+     background: #ea0026;
+}
+
+.descr:hover {
+     opacity: 1;
+     transform: scale(1.15);
+}
+
+
+/****info***/
+
+.info {
+     margin: 100px 0 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.info-item {
+     display: flex;
+     height: 190px;
+     width: 280px;
+     flex-direction: column;
+     align-items: center;
+}
+
+.info-item h4 {
+     letter-spacing: 3px;
+     font-weight: 700;
+     padding: 0;
+     margin: 0;
+}
+
+.info-item p {
+     padding-top: 10px;
+     margin: 0;
+     font-size: 1.1rem;
+     font-weight: 300;
+}
+
+
+/****form***/
+
+.send-me {
+     margin: auto;
+     background: #F7F7F7;
+     height: 100%;
+     padding: 50px 0;
+}
+
+.send-me h1 {
+     text-align: center;
+     margin-bottom: 30px
+}
+
+form {
+     margin: 30px auto;
+     width: 40%;
+     display: flex;
+     flex-direction: row;
+     flex-flow: wrap;
+     justify-content: space-between;
+}
+
+#name,
+#email,
+#subject,
+#message {
+     margin: 20px;
+     padding: 15px;
+     width: 100%;
+     border: none;
+     margin: 10px;
+}
+
+#name,
+#email {
+     width: 42%;
+}
+
+input[type=submit] {
+     margin: 40px auto;
+     padding: 20px;
+     box-sizing: border-box;
+     background: #ea0026;
+     color: white;
+     width: 220px;
+     display: inline-block;
+     border: 0.5px solid #ea0026;
+     border-radius: 4px;
+     transition: 0.3s;
+    
+
+}
+
+input[type=submit]:hover {
+     background: white;
+     color: #ea0026;
+     border: 1px solid #ea0026;
+}
+
+
+/*****footer****/
+
+footer {
+     height: 100%;
+     padding: 0 30%;
+     margin: 0 auto;
+     background: black;
+     color:#fff;
+     text-align: center;
+}
+
+footer h4 {
+     font-family: 'Raleway', sans-serif;
+     padding-top: 50px;
+     text-decoration: none;
+     font-size: 2rem;
+     font-weight: 500;
+   margin: 0;
+    
+}
+footer i {
+     padding: 20px;
+    opacity: 0.5;
+}
